@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T05:40:51.575Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="Qy7fL4GYpd4A2DGFigHS" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-01T05:50:51.885Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="hoQY0TwsIJa90lxxjIQS" version="17.5.0" type="github">
   <diagram id="kSQFe9Fa3ZTAE4xW9KOj" name="Page-1">
     <mxGraphModel dx="868" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -68,11 +68,11 @@
         <mxCell id="xbfKCH-Q-x0yVWyje-9f-19" value="start()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="165" y="210" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xbfKCH-Q-x0yVWyje-9f-20" value="notify()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="150" width="50" height="20" as="geometry" />
+        <mxCell id="xbfKCH-Q-x0yVWyje-9f-20" value="notify()/notifyAll()&lt;br&gt;resume()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="145" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xbfKCH-Q-x0yVWyje-9f-21" value="wait()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="150" width="40" height="20" as="geometry" />
+        <mxCell id="xbfKCH-Q-x0yVWyje-9f-21" value="wait()&lt;br&gt;suspend()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="145" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xbfKCH-Q-x0yVWyje-9f-22" value="获得cpu使用权" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="355" y="230" width="90" height="20" as="geometry" />
@@ -80,14 +80,14 @@
         <mxCell id="xbfKCH-Q-x0yVWyje-9f-24" value="失去cpu使用权" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="355" y="200" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xbfKCH-Q-x0yVWyje-9f-25" value="run()的结束&lt;br&gt;或异常" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="215" width="80" height="30" as="geometry" />
+        <mxCell id="xbfKCH-Q-x0yVWyje-9f-25" value="run()的结束&lt;br&gt;或错误/异常&lt;br&gt;或stop()" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="210" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xbfKCH-Q-x0yVWyje-9f-26" value="调用sleep/join/io" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="195" y="290" width="100" height="20" as="geometry" />
+        <mxCell id="xbfKCH-Q-x0yVWyje-9f-26" value="调用sleep/join/等待同步锁执行结束" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="290" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xbfKCH-Q-x0yVWyje-9f-27" value="调用sleep/join/io" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="470" y="290" width="100" height="20" as="geometry" />
+        <mxCell id="xbfKCH-Q-x0yVWyje-9f-28" value="调用sleep/join/等待同步锁" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="290" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
